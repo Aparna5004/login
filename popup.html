@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Lora&family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap"
+        rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="logo"></div>
+        <img src="logo1.png">
+
+        <div class="title">Login</div>
+
+        <h2>please signin to continue.</h2>
+
+        <form action="#">
+            <div class="field">
+                <input type="text" required>
+                <label> Email</label>
+            </div>
+            <div class="field">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+
+
+            <div class="field">
+                <input type="submit" value="Login">
+            </div>
+            <div class="pass-link">Forgot Password</div>
+            <div class="signup-link">Don't have an account?<a href="#"> Signup</a></div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
+<style>
+    @import url('https://fonts.googleleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Jost', sans-serif;
+        box-sizing: border-box;
+
+    }
+
+    html,
+    body {
+
+        height: 100%;
+        place-items: center;
+        background: #f2f2f2;
+    }
+
+
+    .wrapper {
+        width: 700px;
+        height: 600px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+        width: 110px;
+        height: 110px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 1px;
+    }
+
+    .wrapper .title {
+        color: rgb(75, 0, 130);
+        font-size: 35px;
+        font-weight: 600;
+
+        text-align: left;
+        padding-top: 24px;
+
+        padding-left: 180px;
+    }
+
+    .wrapper h2 {
+        padding-left: 180px;
+        color: #c850c0;
+        padding-top: 7px;
+        font-size: 15px;
+    }
+
+    .wrapper form {
+        padding: 10px 30px 50px 30px;
+
+    }
+
+    .wrapper form .field {
+        position: relative;
+        height: 70px;
+        width: 70%;
+        margin-top: 25px;
+        margin-left: 20%;
+    }
+
+
+
+    .wrapper form .field input {
+        height: 125%;
+        width: 90%;
+        padding-left: 20px;
+        border-radius: 20px;
+        outline: none;
+        font-size: 17px;
+        border: 2px solid rgb(82, 4, 82);
+        transition: all 0.3s ease;
+
+    }
+
+    .wrapper form .field input:focus,
+    .wrapper form .field input :valid {
+        border-color: #4158d0;
+    }
+
+    .wrapper form .field label {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        font-size: 17px;
+        font-weight: 500;
+        color: purple;
+        transform: translateY(-50%);
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    .wrapper form .field input:focus~label,
+    .wrapper form .field input:valid~label {
+        top: 0%;
+        color: #4158d0;
+        font-size: 16px;
+        background: #fff;
+        transform: translateY(-50%);
+    }
+
+
+
+
+
+    .wrapper form .field input[type="submit"] {
+        color: #fff;
+        background: #ff1493;
+        font-size: 28px;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 40px;
+        width: 92%;
+
+    }
+
+    .wrapper form .field input[type="submit"]:active {
+        transform: scale(0.95);
+
+    }
+
+    .wrapper form .pass-link {
+        color: rgb(126, 30, 173);
+        font-size: 18px;
+
+
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .wrapper form .signup-link {
+        text-align: center;
+        margin-top: 10px;
+        color: rgb(126, 30, 173);
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+
+    .wrapper form .signup-link a {
+        color: #bf3a30;
+        text-decoration: none;
+    }
+
+
+    .wrapper form .signup-link a:hover {
+        text-decoration: underline;
+    }
+</style>
